@@ -7,7 +7,7 @@ export const GET = async () => {
     if (session.user) {
         return NextResponse.json({
             user: session.user,
-            success: false
+            success: true
         })
     }
     return NextResponse.json({
