@@ -3,7 +3,8 @@ name: Build on PR
 on:
   pull_request:
     branches:
-      - master
+      - '*'
+      - '!production'
 
 jobs:
   build:
